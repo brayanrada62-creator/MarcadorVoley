@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MarcadorVoley</string>
+    <string name="text1">Comenzar partido</string>
+    <string name="text2">Ingresa los equipos</string>
+    <string name="text3">Escribe el nombre de cada equipo para empezar</string>
+    <string name="text4">Grupo A</string>
+    <string name="text5">Grupo B</string>
+    <string name="text6">Comenzar el partido</string>
+    <string name="text7">MARCADOR</string>
+</resources>
