@@ -27,20 +27,33 @@
         />
 
     <EditText
+        android:id="@+id/etEquipo1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/text4"
         android:layout_marginTop="100dp"
+        android:inputType="textPersonName"
         />
 
     <EditText
+        android:id="@+id/etEquipo2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/text5"
         android:layout_marginTop="50dp"
+        android:inputType="textPersonName"
         />
 
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp" />
+
     <Button
+        android:id="@+id/btnComenzar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text6"
