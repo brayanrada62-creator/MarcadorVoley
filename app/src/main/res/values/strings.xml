@@ -7,4 +7,6 @@
     <string name="text5">Grupo B</string>
     <string name="text6">Comenzar el partido</string>
     <string name="text7">MARCADOR</string>
+    <string name="error_vacio">Debes escribir el nombre de ambos equipos</string>
+    <string name="sin_dato">Sin nombre</string>
 </resources>

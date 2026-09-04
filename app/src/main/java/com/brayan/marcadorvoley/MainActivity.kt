@@ -1,13 +1,26 @@
 package com.brayan.marcadorvoley
 
+import android.content.Intent
 import android.os.Bundle
-import android.renderscript.ScriptGroup
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.brayan.marcadorvoley.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    val btnsiguiente = binding.btnsiguiente
 
+    // ViewBinding: reemplaza a findViewById
+    private lateinit var binding: ActivityMainBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.btnsiguiente.setOnClickListener { abrirConfiguracion() }
+    }
+
+    // Navega a la segunda Activity
+    private fun abrirConfiguracion() {
+        val intent = Intent(this, Configuracion::class.java)
+        startActivity(intent)
+    }
 }
